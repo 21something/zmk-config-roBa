@@ -1,6 +1,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/pointing.h>
 
@@ -30,6 +31,16 @@
         esc {
             bindings = <&kp ESCAPE>;
             key-positions = <1 0>;
+        };
+
+        henkan {
+            bindings = <&kt INT_HENKAN>;
+            key-positions = <20 18>;
+        };
+
+        muhenkan {
+            bindings = <&kp INT_MUHENKAN>;
+            key-positions = <19 21>;
         };
     };
 
@@ -65,10 +76,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E  &kp R                             &kp T                                                                &kp Y        &kp U  &lt 0 I    &kp O    &kp P
-&kp A             &kp S         &kp D  &kp F                             &kp G        &kp LS(LG(S))                      &kp MINUS            &kp H        &kp J  &kp K      &kp L    &lt 3 TILDE2
-&mt LEFT_SHIFT Z  &kp X         &kp C  &kp V                             &kp B        &kp COLON                          &lt 4 SEMI           &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL         &kp LEFT_WIN  &pw    &lt_to_layer_0 3 INTERNATIONAL_4  &lt 2 SPACE  &lt_to_layer_0 1 INT_MUHENKAN      &mt RCTRL BACKSPACE  &lt 2 ENTER                             &mt RSHIFT DELETE
+&kp Q             &kp W         &kp E  &kp R                        &kp T                                                                 &kp Y        &kp U  &lt 0 I    &kp O    &kp P
+&kp A             &kp S         &kp D  &kp F                        &kp G        &kp LS(LG(S))                       &kp MINUS            &kp H        &kp J  &kp K      &kp L    &lt 3 TILDE2
+&mt LEFT_SHIFT Z  &kp X         &kp C  &kp V                        &kp B        &kp COLON                           &lt 4 SEMI           &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp LCTRL         &kp LEFT_WIN  &pw    &lt_to_layer_0 3 INT_HENKAN  &lt 2 SPACE  &lt_to_layer_0 1 LANG_HIRAGANA      &mt RCTRL BACKSPACE  &lt 2 ENTER                             &mt RSHIFT DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
