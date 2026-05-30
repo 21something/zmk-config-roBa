@@ -91,10 +91,10 @@
 
         symbols {
             bindings = <
-&kp EXCL  &kp LS(NUMBER_2)  &kp HASH  &kp DOLLAR  &kp PERCENT                      &kp LS(NUMBER_6)  &kp LS(N7)        &kp LS(LEFT_PARENTHESIS)  &kp LS(N9)         &kp INT_YEN
-&trans    &trans            &trans    &trans      &trans       &trans      &trans  &kp LEFT_BRACKET  &mkp MB1          &mkp MB2                  &mkp MB3           &kp SEMI
-&trans    &trans            &trans    &trans      &trans       &trans      &trans  &kp LESS_THAN     &kp GREATER_THAN  &kp RBKT                  &kp RIGHT_BRACKET  &kp COLON
-&trans    &trans            &trans    &trans      &trans       &trans      &trans  &trans                                                                           &kp LA(INT_YEN)
+&kp EXCL  &kp LS(NUMBER_2)  &kp HASH  &kp DOLLAR  &kp PERCENT                      &kp LS(NUMBER_6)  &kp LS(N7)        &kp LS(N8)  &kp LS(N9)         &kp INT_YEN
+&trans    &trans            &trans    &trans      &trans       &trans      &trans  &kp LEFT_BRACKET  &mkp MB1          &mkp MB2    &mkp MB3           &kp SEMI
+&trans    &trans            &trans    &trans      &trans       &trans      &trans  &kp LESS_THAN     &kp GREATER_THAN  &kp RBKT    &kp RIGHT_BRACKET  &kp COLON
+&trans    &trans            &trans    &trans      &trans       &trans      &trans  &trans                                                             &kp UNDER
             >;
         };
 
